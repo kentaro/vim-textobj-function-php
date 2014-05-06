@@ -8,8 +8,8 @@
 let s:save_cpo = &cpo
 set cpo&vim
 
-if !exists('*g:textobj_function_php_select')
-  function! g:textobj_function_php_select(object_type)
+if !exists('*g:Textobj_function_php_select')
+  function! g:Textobj_function_php_select(object_type)
     return s:select_{a:object_type}()
   endfunction
 
@@ -154,7 +154,7 @@ if !exists('*g:textobj_function_php_select')
 endif
 
 
-let b:textobj_function_select = function('g:textobj_function_php_select')
+let b:textobj_function_select = function('g:Textobj_function_php_select')
 
 
 
